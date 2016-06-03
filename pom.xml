@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
+        <!--支持注解-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -17,6 +18,8 @@
 
         <!-- 项目依赖 -->
         <!--1.日志，使用sl4j+logback -->
+        <!--sl4j是规范（接口）-->
+        <!--其他是实现：log4j,logback,common-loggin-->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
@@ -34,10 +37,12 @@
             <version>1.0.13</version>
         </dependency>
 
+        <!--数据库连接-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.38</version>
+            <scope>runtime</scope>
         </dependency>
         <dependency>
             <groupId>com.mchange</groupId>
@@ -57,7 +62,7 @@
             <version>1.2.2</version>
         </dependency>
 
-        <!-- servlet -->
+        <!-- servlet web-->
         <dependency>
             <groupId>taglibs</groupId>
             <artifactId>standard</artifactId>
@@ -95,6 +100,8 @@
             <artifactId>spring-context</artifactId>
             <version>4.2.6.RELEASE</version>
         </dependency>
+
+        <!--spring Dao-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
