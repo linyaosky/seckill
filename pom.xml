@@ -127,19 +127,27 @@
             <artifactId>spring-test</artifactId>
             <version>4.2.6.RELEASE</version>
         </dependency>
+        <dependency>
+            <groupId>ant</groupId>
+            <artifactId>ant</artifactId>
+            <version>1.7.0</version>
+        </dependency>
     </dependencies>
 
     <!--仓库配置-->
     <repositories>
+        <!--开源中国仓库-->
+        <!--<repository>-->
+            <!--<id>oschina-repos</id>-->
+            <!--<name>Oschina Releases</name>-->
+            <!--<url>http://maven.oschina.net/content/groups/public</url>-->
+        <!--</repository>-->
+        <!--中央仓库-->
         <repository>
-            <id>oschina-repos</id>
-            <name>Oschina Releases</name>
-            <url>http://maven.oschina.net/content/groups/public</url>
-        </repository>
-        <repository>
-            <id>java-repos</id>
-            <name>Java Repository</name>
-            <url>http://download.java.net/maven/2/</url>
+            <id>central</id>
+            <name>Maven Repository Switchboard</name>
+            <layout>default</layout>
+            <url> http://repo1.maven.org/maven2</url>
         </repository>
     </repositories>
 
@@ -170,10 +178,6 @@
                 <!--<groupId>org.mybatis.generator</groupId>-->
                 <!--<artifactId>mybatis-generator-maven-plugin</artifactId>-->
                 <!--<version>1.3.2</version>-->
-                <!--<configuration>-->
-                    <!--<verbose>true</verbose>-->
-                    <!--<overwrite>true</overwrite>-->
-                <!--</configuration>-->
             <!--</plugin>-->
         </plugins>
     </build>
