@@ -137,12 +137,12 @@
     <!--仓库配置-->
     <repositories>
         <!--开源中国仓库-->
-        <!--<repository>-->
-            <!--<id>oschina-repos</id>-->
-            <!--<name>Oschina Releases</name>-->
-            <!--<url>http://maven.oschina.net/content/groups/public</url>-->
-        <!--</repository>-->
-        <!--中央仓库-->
+        <repository>
+            <id>oschina-repos</id>
+            <name>Oschina Releases</name>
+            <url>http://maven.oschina.net/content/groups/public</url>
+        </repository>
+        中央仓库
         <repository>
             <id>central</id>
             <name>Maven Repository Switchboard</name>
